@@ -7,14 +7,18 @@ namespace palindrome
         static void Main(string[] args)
         {
             string s, revs = "";
-            Console.WriteLine(" Enter string");
+            // user instructed to enter a string
+            Console.WriteLine("Please Enter Word");
             s = Console.ReadLine();
-            for (int i = s.Length - 1; i >= 0; i--) //String Reverse  
+            // this is where we reverse the string
+            for (int i = s.Length - 1; i >= 0; i--)  
             {
                 revs += s[i].ToString();
             }
-            if (revs == s) // Checking whether string is palindrome or not  
+            // Checking whether the string is palindrome or not  
+            if (revs == s) 
             {
+            // print appropriate statements    
                 Console.WriteLine("String is Palindrome \n Entered String Was {0} and reverse string is {1}", s, revs);
             }
             else
