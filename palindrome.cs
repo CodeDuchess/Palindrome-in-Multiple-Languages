@@ -25,6 +25,7 @@ namespace palindrome
             {
                 Console.WriteLine("String is not Palindrome \n Entered String Was {0} and reverse string is {1}", s, revs);
             }
+            // console.ReadKey is a method that makes the program wait for a key press from the user
             Console.ReadKey();
         }
     }
