@@ -2,10 +2,8 @@
 const palindrome = str => {
  // make the string lowercase
  str = str.toLowerCase()
- 
-  // this is best accomlished by turning the string into an array, reversing it, making our comparison and then put it back together
+   // this is best accomlished by turning the string into an array, reversing it, making our comparison and then put it back together
  return str === str.split('').reverse().join('')
-
 }
 /* in console, test the code with the following:
 palindrome ("Abba");
